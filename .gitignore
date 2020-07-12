@@ -1,0 +1,5 @@
+terraform.*
+.terraform
+backend.tf
+aws*
+terraform.tfstate.backup
