@@ -7,7 +7,7 @@ provider "aws" {
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
-  name = "${var.prefix}.${var.vpc_name}"
+  name = "${terraform.workspace}.${var.vpc_name}"
   cidr = "10.0.0.0/16"
 
   azs             = ["eu-north-1a", "eu-north-1b", "eu-north-1c"]
@@ -19,6 +19,6 @@ module "vpc" {
 
   tags = {
     Terraform   = "true"
-    Environment = var.prefix
+    Environment = terraform.workspace
   }
 }
