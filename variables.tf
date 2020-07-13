@@ -1,11 +1,3 @@
-/* variable “workspace_to_environment_map” {
-  type = “map”
-  default = {
-    dev     = “dev”
-    qa      = “qa”
-    prod    = “prod”
-  }
-} */
 variable "region" {
 default = "eu-north-1" 
 }
