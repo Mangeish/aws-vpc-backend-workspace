@@ -1,5 +1,5 @@
 
-# Backend configuration is loaded early so we can't use variables
+# Backend configuration is loaded early so we can't use variables here
 terraform {
   backend "s3" {
     region = "eu-north-1"
